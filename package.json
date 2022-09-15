@@ -1,6 +1,6 @@
 {
-    "name": "@annangela/eslint-plugin-prefer-reflect",
-    "version": "0.0.2",
+    "name": "@annangela/eslint-plugin",
+    "version": "0.0.3",
     "description": "Modern version of original \"prefer-reflect\" rules in eslint",
     "keywords": [
         "eslint",
@@ -10,12 +10,12 @@
     "author": "AnnAngela",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AnnAngela/eslint-plugin-prefer-reflect.git"
+        "url": "git+https://github.com/AnnAngela/eslint-plugin.git"
     },
     "bugs": {
-        "url": "https://github.com/AnnAngela/eslint-plugin-prefer-reflect/issues"
+        "url": "https://github.com/AnnAngela/eslint-plugin/issues"
     },
-    "homepage": "https://github.com/AnnAngela/eslint-plugin-prefer-reflect#readme",
+    "homepage": "https://github.com/AnnAngela/eslint-plugin#readme",
     "main": "./lib/index.js",
     "exports": "./lib/index.js",
     "scripts": {
