@@ -1,0 +1,41 @@
+{
+    "name": "eslint-plugin-prefer-reflect",
+    "version": "0.0.1",
+    "description": "Modern version of original \"prefer-reflect\" rules in eslint",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "author": "AnnAngela",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AnnAngela/eslint-plugin-prefer-reflect.git"
+    },
+    "bugs": {
+        "url": "https://github.com/AnnAngela/eslint-plugin-prefer-reflect/issues"
+    },
+    "homepage": "https://github.com/AnnAngela/eslint-plugin-prefer-reflect#readme",
+    "main": "./lib/index.js",
+    "exports": "./lib/index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "mocha tests --recursive"
+    },
+    "dependencies": {
+        "requireindex": "^1.2.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.19.0",
+        "eslint-plugin-eslint-plugin": "^5.0.0",
+        "eslint-plugin-node": "^11.1.0",
+        "mocha": "^10.0.0"
+    },
+    "engines": {
+        "node": "^16.0.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=7"
+    },
+    "license": "MIT"
+}
