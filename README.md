@@ -1,6 +1,8 @@
-# eslint-plugin-prefer-reflect
+# eslint-plugin
 
-Modern version of original `prefer-reflect` rules in eslint
+Main propose:
+
+- Modern version of original `prefer-reflect` rules in eslint
 
 ## Installation
 
@@ -10,20 +12,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `@annangela/eslint-plugin-prefer-reflect`:
+Next, install `@annangela/eslint-plugin`:
 
 ```sh
-npm install @annangela/eslint-plugin-prefer-reflect --save-dev
+npm install @annangela/eslint-plugin --save-dev
 ```
 
 ## Usage
 
-Add `@annangela/prefer-reflect` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@annangela/eslint-plugin` to the plugins section of your `.eslintrc` configuration file:
 
 ```json
 {
     "plugins": [
-        "@annangela/eslint-plugin-prefer-reflect"
+        "@annangela/eslint-plugin"
     ]
 }
 ```
