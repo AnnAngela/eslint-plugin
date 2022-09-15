@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "@annangela/eslint-plugin-prefer-reflect/prefer-reflect": "error"
+        "@annangela/prefer-reflect": "error"
     }
 }
 ```

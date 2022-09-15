@@ -1,5 +1,5 @@
 ---
-title: prefer-reflect
+title: @annangela/prefer-reflect
 layout: doc
 rule_type: suggestion
 related_rules:
@@ -53,7 +53,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 myFunction.apply(undefined, args);
 myFunction.apply(null, args);
@@ -73,7 +73,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.apply(myFunction, undefined, args);
 Reflect.apply(myFunction, null, args);
@@ -92,7 +92,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["apply"] }
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["apply"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["apply"] }]*/
 
 // in addition to Reflect.apply(...):
 myFunction.apply(undefined, args);
@@ -108,7 +108,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["call"] }`
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["call"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["call"] }]*/
 
 // in addition to Reflect.apply(...):
 myFunction.call(undefined, arg);
@@ -128,7 +128,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.defineProperty({}, 'foo', {value: 1})
 ```
@@ -140,7 +140,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.defineProperty({}, 'foo', {value: 1})
 ```
@@ -152,7 +152,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["definePro
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["defineProperty"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["defineProperty"] }]*/
 
 Object.defineProperty({}, 'foo', {value: 1})
 Reflect.defineProperty({}, 'foo', {value: 1})
@@ -169,7 +169,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 delete foo.bar; // deleting object property
 ```
@@ -181,7 +181,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 delete bar; // deleting variable
 Reflect.deleteProperty(foo, 'bar');
@@ -196,7 +196,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["delete"] 
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["delete"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["delete"] }]*/
 
 delete bar
 delete foo.bar
@@ -214,7 +214,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.getOwnPropertyDescriptor({}, 'foo')
 ```
@@ -226,7 +226,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.getOwnPropertyDescriptor({}, 'foo')
 ```
@@ -238,7 +238,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["getOwnPro
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["getOwnPropertyDescriptor"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["getOwnPropertyDescriptor"] }]*/
 
 Object.getOwnPropertyDescriptor({}, 'foo')
 Reflect.getOwnPropertyDescriptor({}, 'foo')
@@ -255,7 +255,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.getPrototypeOf({}, 'foo')
 ```
@@ -267,7 +267,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.getPrototypeOf({}, 'foo')
 ```
@@ -279,7 +279,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["getProtot
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["getPrototypeOf"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["getPrototypeOf"] }]*/
 
 Object.getPrototypeOf({}, 'foo')
 Reflect.getPrototypeOf({}, 'foo')
@@ -296,7 +296,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 'foo' in {}; // deleting object property
 ```
@@ -308,7 +308,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.has({}, 'foo');
 ```
@@ -320,7 +320,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["has"] }` 
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["has"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["has"] }]*/
 
 'foo' in {};
 Reflect.has({}, 'foo');
@@ -337,7 +337,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.isExtensible({})
 ```
@@ -349,7 +349,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.isExtensible({})
 ```
@@ -361,7 +361,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["isExtensi
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["isExtensible"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["isExtensible"] }]*/
 
 Object.isExtensible({})
 Reflect.isExtensible({})
@@ -378,7 +378,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.getOwnPropertyNames({})
 ```
@@ -390,7 +390,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.ownKeys({})
 ```
@@ -402,7 +402,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["ownKeys"]
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["ownKeys"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["ownKeys"] }]*/
 
 Object.getOwnPropertyNames({})
 Reflect.ownKeys({})
@@ -419,7 +419,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.preventExtensions({})
 ```
@@ -431,7 +431,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.preventExtensions({})
 ```
@@ -443,7 +443,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["preventEx
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["preventExtensions"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["preventExtensions"] }]*/
 
 Object.preventExtensions({})
 Reflect.preventExtensions({})
@@ -460,7 +460,7 @@ Examples of **incorrect** code for this rule when used without exceptions:
 ::: incorrect
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Object.setPrototypeOf({}, Object.prototype)
 ```
@@ -472,7 +472,7 @@ Examples of **correct** code for this rule when used without exceptions:
 ::: correct
 
 ```js
-/*eslint prefer-reflect: "error"*/
+/*eslint @annangela/prefer-reflect: "error"*/
 
 Reflect.setPrototypeOf({}, Object.prototype)
 ```
@@ -484,7 +484,7 @@ Examples of **correct** code for this rule with the `{ "exceptions": ["setProtot
 ::: correct
 
 ```js
-/*eslint prefer-reflect: ["error", { "exceptions": ["setPrototypeOf"] }]*/
+/*eslint @annangela/prefer-reflect: ["error", { "exceptions": ["setPrototypeOf"] }]*/
 
 Object.setPrototypeOf({}, Object.prototype)
 Reflect.setPrototypeOf({}, Object.prototype)
