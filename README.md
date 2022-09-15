@@ -10,20 +10,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-prefer-reflect`:
+Next, install `@annangela/eslint-plugin-prefer-reflect`:
 
 ```sh
-npm install eslint-plugin-prefer-reflect --save-dev
+npm install @annangela/eslint-plugin-prefer-reflect --save-dev
 ```
 
 ## Usage
 
-Add `prefer-reflect` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@annangela/prefer-reflect` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "prefer-reflect"
+        "@annangela/eslint-plugin-prefer-reflect"
     ]
 }
 ```
@@ -34,13 +34,13 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "prefer-reflect/rule-name": 2
+        "@annangela/eslint-plugin-prefer-reflect/prefer-reflect": "error"
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* [`prefer-reflect`](docs/rules/prefer-reflect.md): Please look up the doc link.
 
 
