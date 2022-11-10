@@ -43,6 +43,6 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* [`prefer-reflect`](docs/rules/prefer-reflect.md): Please look up the doc link.
+* [`prefer-reflect`](docs/rules/prefer-reflect.md): Please look up [the doc link](docs/rules/prefer-reflect.md).
 
 
