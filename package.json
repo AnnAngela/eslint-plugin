@@ -1,6 +1,6 @@
 {
     "name": "@annangela/eslint-plugin",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "Modern version of original \"prefer-reflect\" rules in eslint",
     "keywords": [
         "eslint",
